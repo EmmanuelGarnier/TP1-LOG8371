@@ -24,12 +24,12 @@ jobs:
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@af1da67850ed9a4cedd57bfd976089dd991e2582 # v4.0.0
 
-    - name: Build with Gradle
+    - name: Build with Gradle without test
       run: ./gradlew build -x test
 
     - name: Run tests for sonar-alm-client
       run: |
-        ./gradlew test --tests 'server/sonar-alm-client.*'
+        ./gradlew :server:sonar-alm-client:test
       
 
     # The USERNAME and TOKEN need to correspond to the credentials environment variables used in
