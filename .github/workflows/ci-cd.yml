@@ -27,6 +27,11 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build -x test
 
+    - name: Run tests for sonar-alm-client
+      run: |
+      ./gradlew test --tests 'server/sonar-alm-client.*'
+      
+
     # The USERNAME and TOKEN need to correspond to the credentials environment variables used in
     # the publishing section of your build.gradle
     - name: Publish to GitHub Packages
