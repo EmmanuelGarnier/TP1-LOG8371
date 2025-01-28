@@ -29,7 +29,7 @@ jobs:
 
     - name: Run tests for sonar-alm-client
       run: |
-      ./gradlew test --tests 'server/sonar-alm-client.*'
+        ./gradlew test --tests 'server/sonar-alm-client.*'
       
 
     # The USERNAME and TOKEN need to correspond to the credentials environment variables used in
