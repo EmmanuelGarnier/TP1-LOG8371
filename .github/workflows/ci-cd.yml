@@ -34,9 +34,8 @@ jobs:
     - name: Start SonarQube server
       run: |
           echo "Starting SonarQube Scanner..."
-          cd sonar-application/build/distributions
           ls -R
+          cd sonar-application/build/distributions
           unzip sonar-application-25.1-SNAPSHOT.zip
           echo "ELOUAN TEST"
-          ls -R
           bin/linux-x86-64/sonar.sh start
