@@ -95,7 +95,7 @@ public class AzureDevOpsHttpClientTest {
     String serverUrl = server.url("").toString();
     assertThatThrownBy(() -> underTest.checkPAT(serverUrl, "invalid-token"))
       .isInstanceOf(IllegalArgumentException.class)
-      .hasMessage("Valid personal access token");
+      .hasMessage("Invalid personal access token");
   }
 
   @Test
