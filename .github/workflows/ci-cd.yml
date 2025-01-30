@@ -27,9 +27,9 @@ jobs:
     - name: Build with Gradle without test
       run: ./gradlew build -x test
 
-    - name: Run tests for sonar-alm-client
+    - name: Run tests for sonar-main
       run: |
-        ./gradlew :server:sonar-alm-client:test
+        ./gradlew :server:sonar-main:test
 
     - name: Start SonarQube server
       run: |
