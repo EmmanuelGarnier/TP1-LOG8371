@@ -35,4 +35,5 @@ jobs:
       run: |
           cd sonar-application/build/distributions
           unzip sonar-application-25.1-SNAPSHOT.zip          
+          bin/linux-x86-64/sonar.sh start
       # This is where i would run 'bin/linux-x86-64/sonar.sh start' to start the server but there is no such file generated
