@@ -18,34 +18,28 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
 
-*
 package org.sonar.application;
-
-**
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import net.bytebuddy.implementation.bytecode.Addition;**
-
 public class AdditionTest {
-    **
-   @Test
- * public void testAddition() {
- * int result = Addition.addNumbers(5, 10);
- * assertEquals(15, result);
- * }**
+    @Test
+    public void testAddition() {
+        int result = Addition.addNumbers(5, 10);
+        assertEquals(15, result);
+    }
 
-   @Test
- * public void testNegativeNumberAdditiion() {
- * int result = Addition.addNumbers(-23, -9);
- * assertEquals(-32, result);
- * }***
+    @Test
+    public void testNegativeNumberAdditiion() {
+        int result = Addition.addNumbers(-23, -9);
+        assertEquals(-32, result);
+    }
 
-   @Test
- * public void testResultZero() {
- * int result = Addition.addNumbers(-4, 4);
- * assertEquals(0, result);
- * }*
+    @Test
+    public void testResultZero() {
+        int result = Addition.addNumbers(-4, 4);
+        assertEquals(0, result);
+    }
 }
