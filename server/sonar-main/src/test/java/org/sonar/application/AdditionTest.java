@@ -17,31 +17,35 @@
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
-/*
- * package org.sonar.application;
- * 
- * import org.junit.Test;
- * import static org.junit.Assert.*;
- * 
- * public class AdditionTest {
- * 
- * @Test
+
+*
+package org.sonar.application;
+
+**
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+import net.bytebuddy.implementation.bytecode.Addition;**
+
+public class AdditionTest {
+    **
+   @Test
  * public void testAddition() {
  * int result = Addition.addNumbers(5, 10);
  * assertEquals(15, result);
- * }
- * 
- * @Test
+ * }**
+
+   @Test
  * public void testNegativeNumberAdditiion() {
  * int result = Addition.addNumbers(-23, -9);
  * assertEquals(-32, result);
- * }
- * 
- * 
- * @Test
+ * }***
+
+   @Test
  * public void testResultZero() {
  * int result = Addition.addNumbers(-4, 4);
  * assertEquals(0, result);
- * }
- * }
- */
+ * }*
+}
